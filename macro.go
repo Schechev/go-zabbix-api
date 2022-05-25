@@ -54,12 +54,17 @@ func (api *API) MacrosCreate(macros Macros) error {
 	return nil
 }
 
+
+
 // MacrosUpdate Wrapper for usermacro.update
 // https://www.zabbix.com/documentation/3.2/manual/api/reference/usermacro/update
 func (api *API) MacrosUpdate(macros Macros) (err error) {
-	_, err = api.CallWithError("usermacro.create", macros)
+	_, err = api.CallWithError("usermacro.update", macros)
 	return
 }
+
+
+
 
 // MacrosDeleteByIDs Wrapper for usermacro.delete
 // Cleans MacroId in all macro elements if call succeed.

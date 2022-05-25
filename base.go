@@ -31,6 +31,8 @@ type Response struct {
 	ID      int32       `json:"id"`
 }
 
+type Responses []Response
+
 // RawResponse format of zabbix api
 type RawResponse struct {
 	Jsonrpc string          `json:"jsonrpc"`

@@ -19,6 +19,7 @@ type HostGroup struct {
 	GroupID  string       `json:"groupid,omitempty"`
 	Name     string       `json:"name"`
 	Internal InternalType `json:"internal,omitempty,string"`
+	HostID string 	  	  `json:"hostid,omitempty"`
 }
 
 // HostGroups is an array of HostGroup
